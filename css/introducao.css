@@ -1,0 +1,34 @@
+.introducao-container {
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.container-textos-introducao {
+  align-content: center;
+}
+
+.text-introducao {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+.paragrafo-introducao {
+  font-size: 1.5rem;
+  color: #525252;
+}
+.text-introducao::before {
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: url(/img/detalhe.svg);
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: -1;
+}
